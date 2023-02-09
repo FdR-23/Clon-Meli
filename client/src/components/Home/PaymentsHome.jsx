@@ -23,7 +23,7 @@ const PaymentsHome = () => {
                             <a className="float-left h-[54px] mr-[16px] w-[48px]" data-title="Medios de pago">
                                 <img decoding="async" src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/payments/debit-card.svg" alt="Tarjeta de débito" />
                             </a>
-                            <div clclassNameass="inline-block mt-1px">Tarjeta de débito</div>
+                            <div className="inline-block mt-1px">Tarjeta de débito</div>
                             <div className="text-[#999] text-sm mt-[-1px]">
                                 <a className='text-[#3483fa] hover:text-[#1259c3] cursor-pointer' data-title="Medios de pago" aria-label="Tarjeta de débito, Ver más">Ver más</a>
                             </div>
