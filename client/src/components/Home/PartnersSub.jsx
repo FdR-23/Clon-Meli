@@ -9,7 +9,7 @@ const PartnersSub = () => {
                     <h2 className='text-[26px] font-light ml-[8px] text-[#666] '>
                         Beneficios de Mercado Puntos
                     </h2>
-                    <a className='items-baseline ml-[16px] mt-auto mb-[2px] text-[#3483fa] text-[16px]' href="">
+                    <a className='items-baseline ml-[16px] mt-auto mb-[2px] text-[#3483fa] text-[16px] font-extralight'>
                         Ver todos los beneficios
                     </a>
                 </div>

@@ -1,19 +1,39 @@
 import React, { useState } from 'react'
 import SubMenuICategory from './SubMenuICategory.jsx';
 
-import { useMenuContext } from './MenuProvider'
 
+const navCategories = [
+    "Vehiculos",
+    "Inmuebles",
+    "Supermercado",
+    "Tecnología",
+    "Hogar y Muebles",
+    "Electrodomésticos",
+    "Herramientas",
+    "Construccion",
+    "Deportes y Fitness",
+    "Accesorios para Vehículos",
+    "Moda",
+    "Juegos y Juguetes",
+    "Bebés",
+    "Belleza y Cuidado Personal",
+    "Salud y Equipamento Médico",
+    "Industrias y Oficinas",
+    "Agro",
+    "Productos Sustentables",
+    "Servicios",
+    "Más vendidos",
+    "Tiendas oficiales",
+    "Ver más categorías"];
 
 export const NavMenu = () => {
     const [open, setOpent] = useState(false)
-
     const [isHovered, setIsHovered] = useState(false);
-    const { categories } = useMenuContext()
+
 
 
     const handleToggle = () => {
         setOpent(!open)
-        console.log(open)
     }
 
 
@@ -36,8 +56,7 @@ export const NavMenu = () => {
 
                     <a className=' before:content-[""] before:font-navigation before:text-[23px] before:absolute before:top-[9px] before:left-[7px]
            h-10 px-2 top-[52px]  max-w-[170px] left-[1px] text-[#333] border-solid border-[1px] border-transparent rounded lg:inline-block lg:absolute lg:leading-[22px]
-           hover:border-[#eadd61]'
-                        href="">
+           hover:border-[#eadd61]'>
                         <span className='relative  whitespace-nowrap overflow-hidden text-ellipsis top[1px] text-xs text-[#00000080] 
                 block w-full left-[8px] pt-[6px] pl-[13px] mr-2 leading-[10px] h-5'
                         >Enviar a</span>
@@ -55,9 +74,9 @@ export const NavMenu = () => {
                   text-[#33333399] hover:text-[#333333e6] text-sm '>
                         Categorías
                     </button>
-                    {open && categories &&
+                    {open && navCategories &&
                         <SubMenuICategory
-                            subcategories={categories} />}
+                            subcategories={navCategories} />}
                 </li>
                 <li className='pr-[18px] w-auto float-left '>
                     <a className='lg:relative lg:text-[#33333399] hover:text-[#333333e6] '

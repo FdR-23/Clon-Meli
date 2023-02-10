@@ -1,7 +1,7 @@
 import React from 'react'
 import { useMenuContext } from './MenuProvider'
 
-const MoreCategory = () => {
+const MoreCategories = () => {
 
     const { categories } = useMenuContext()
     return (
@@ -30,4 +30,4 @@ const MoreCategory = () => {
 }
 
 
-export default MoreCategory 
+export default MoreCategories
