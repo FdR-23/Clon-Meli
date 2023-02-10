@@ -30,7 +30,7 @@ module.exports = {
         'logo-small': "url('/src/assets/img/logos/logo__small.png')",
       },
       backgroundColor: {
-        'body': "rgb(237 237 237)"
+        'main': "rgb(237 237 237)"
       }
     },
   },
