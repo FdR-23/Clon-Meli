@@ -30,20 +30,20 @@ export const NavMenu = () => {
     const [open, setOpent] = useState(false)
     const [isHovered, setIsHovered] = useState(false);
 
-
-
     const handleToggle = () => {
         setOpent(!open)
     }
 
-
-
     const handleMouseEnter = () => {
-        setIsHovered(true);
+        setTimeout(() => {
+            setIsHovered(true);
+        }, 500);
     };
 
     const handleMouseLeave = () => {
+
         setIsHovered(false);
+
     };
 
 
@@ -51,7 +51,8 @@ export const NavMenu = () => {
 
         <div className='lg:block lg:ml-[-150px] lg:max-w-[785px] '>
             <ul className='lg:pt-3 lg:h-9 lg:m-0 lg:overflow-hidden 
-         [&>li>a]:text-sm [&>li>a]:leading-[22px]  [&>li]:inline-block [&>li]:cursor-pointer [&>li]:text-[#333] '>
+            [&>li>a]:text-sm [&>li>a]:leading-[22px]  [&>li]:inline-block [&>li]:cursor-pointer [&>li]:text-[#333] '
+            >
                 <li className='pr-[18px]  float-left first:font-normal w-[186px]'>
 
                     <a className=' before:content-[""] before:font-navigation before:text-[23px] before:absolute before:top-[9px] before:left-[7px]
@@ -65,7 +66,9 @@ export const NavMenu = () => {
                         >Capital Federal</span>
                     </a>
                 </li>
-                <li className='pr-[18px] pl-[186px] w-auto float-left font-normal'>
+                <li onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                    className='pr-[18px] pl-[186px] w-auto float-left font-normal'>
                     <button onClick={(e) => handleToggle(e)}
                         className='after:w-[6px] after:h-[6px] after:relative after:mt-[8px] after:ml-[6px] 
                 after:border-solid after:border-r-[1.5px] after:border-b-[1.5px] after:border-[#0000004d] after:transition-all after:ease-out after:duration-300 
@@ -74,7 +77,7 @@ export const NavMenu = () => {
                   text-[#33333399] hover:text-[#333333e6] text-sm '>
                         Categorías
                     </button>
-                    {open && navCategories &&
+                    {open || isHovered && navCategories &&
                         <SubMenuICategory
                             subcategories={navCategories} />}
                 </li>

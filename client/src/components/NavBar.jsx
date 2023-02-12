@@ -19,22 +19,22 @@ const NavBar = () => {
                     h-[52px] text-right mt-12 left-[2px]
                      block float-right   whitespace-nowrap relative'
                     id="nav-header-menu">
-                    <a className='left-3 px-[10px] text-sm leading-[55px] inline text-[#333] relative'
-                        href="https://www.mercadolibre.com.ar/registration?confirmation_url=https%3A%2F%2Fwww.mercadolibre.com.ar%2F#nav-header" data-link-id="registration" rel="nofollow" tabIndex="8">Creá tu cuenta</a>
-                    <a className='left-3 px-[10px] text-sm leading-[55px] inline text-[#333] relative'
-                        href="https://www.mercadolibre.com/jms/mla/lgz/login?platform_id=ML&amp;go=https%3A%2F%2Fwww.mercadolibre.com.ar%2F&amp;loginType=explicit#nav-header" data-link-id="login" rel="nofollow" tabIndex="8">Ingresá</a>
-                    <a className='left-3 px-[10px] text-sm leading-[55px] inline text-[#333] relative'
-                        href="https://myaccount.mercadolibre.com.ar/purchases/list#nav-header" data-link-id="purchases" rel="nofollow" tabIndex="8">Mis compras</a>
+                    <a className='left-3 px-[10px] text-sm leading-[55px] inline text-[#333] relative cursor-pointer'
+                        data-link-id="registration" rel="nofollow" tabIndex="8">Creá tu cuenta</a>
+                    <a className='left-3 px-[10px] text-sm leading-[55px] inline text-[#333] relative cursor-pointer'
+                        data-link-id="login" rel="nofollow" tabIndex="8">Ingresá</a>
+                    <a className='left-3 px-[10px] text-sm leading-[55px] inline text-[#333] relative cursor-pointer'
+                        data-link-id="purchases" rel="nofollow" tabIndex="8">Mis compras</a>
                 </nav>
 
                 {/* ---SEARCH PRODUCTS--- */}
                 <div>
-                    <a className=' lg:absolute lg:left-[10px] lg:top-[11px] '
-                        href="//www.mercadolibre.com.ar" tabIndex="2">
+                    <a className=' lg:absolute lg:left-[10px] lg:top-[11px] cursor-pointer'
+                        tabIndex="2">
                         <img className='lg:w-[134px] lg:h-[34px] lg:top-[11px] hidden lg:inline-block' src={logo_large_img} alt="nav_logo_large" />
                         <img className='w-[44px] h-[31px] lg:hidden' src={logo_small_img} alt="nav_logo_small" />
                     </a>
-                    <form className='block w-full overflow-auto  z-[910] text-[16px]  
+                    <form className='block w-full overflow-auto   text-[16px]  
                     lg:relative lg:left-[35px] lg:max-w-[600px] lg:h-14  lg:py-2 lg:px-[1px]'>
                         <input
                             className='placeholder:opacity-75 shadow-nav-input placeholder:font-thin placeholder:text-black placeholder:text-opacity-40
@@ -72,8 +72,7 @@ const NavBar = () => {
                 </a>
 
                 {/* /////PROMOTION///// */}
-                <a className='hidden lg:inline-block lg:absolute lg:right-[10px] lg:top-[9px] '
-                    href="https://www.mercadolibre.com.ar/suscripciones/nivel-6#origin=banner-menu&amp;me.content_id=bannermenu_n6_generico&amp;me.component_id=banner_menu_web_ml&amp;me.logic=campaigns&amp;me.position=0&amp;me.bu_line=36&amp;me.flow=-1&amp;me.bu=9&amp;me.audience=all"
+                <a className='hidden lg:inline-block lg:absolute lg:right-[10px] lg:top-[9px]'
                     tabIndex="5">
                     <img className='lg:max-w-[340px] lg:max-h-[39px] overflow-clip '
                         src={beneficio_img} title="Suscribite al nivel 6 con beneficios exclusivos"

@@ -14,6 +14,9 @@ module.exports = {
       'button-banner': '0 8px 16px 0 rgb(0 0 0 / 10%)',
       'button-pagination': 'inset 0 0 0 1px rgb(255 255 255)',
       'button-hover-pagination': '0 0 0 1px rgb(0 0 0 / 25%)',
+      'cart-discovery': '0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%)',
+      'button-categorie': '0 2px 4px 0 rgb(0 0 0 / 19%)',
+      'hover-button-categorie': '0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);'
     },
     extend: {
       fontFamily: {

@@ -5,7 +5,7 @@ const HomeCarousel = () => {
     const [selectIndex, setSelectIndex] = useState(0);
     const [selecteImage, setSelectedImage] = useState(image[0]);
 
-    const selectNewImage = (index, image, next = true) => {
+    const selectNewImage = ( image, next = true) => {
         const condition = next ? selectIndex < image.length - 1 : selectIndex > 0;
         const nextIndex = next ?
             condition ? selectIndex + 1 : 0
@@ -14,10 +14,10 @@ const HomeCarousel = () => {
         setSelectIndex(nextIndex);
     }
     const previus = () => {
-        selectNewImage(selectIndex, image, false)
+        selectNewImage(image, false)
     }
-    const next = (selectIndex) => {
-        selectNewImage(selectIndex, image)
+    const next = () => {
+        selectNewImage(image)
     }
 
     return (
@@ -26,16 +26,15 @@ const HomeCarousel = () => {
                 <div className='relativet '>
 
                     <button className='absolute flex justify-center h-[64px] p-0 w-8 opacity-100 items-center rounded-tr-[64px] rounded-br-[64px]
-                     bg-white top-[50%] left-0 z-[1021] translate-y-[-50%] hover:shadow-button-banner
-                     transition-transform duration-500 '
+                     bg-white top-[50%] left-0 z-[1021] translate-y-[-50%] hover:shadow-button-banner'
                         onClick={() => previus()}>
                         <span className='flex'>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="#3483fa"><path d="M14.0656 4.9325L15.1263 5.99316L9.12254 11.9969L15.1325 18.0069L14.0719 19.0676L7.00122 11.9969L14.0656 4.9325Z" fill="#3483fa"></path></svg>
                         </span>
                     </button>
 
-                    <div className='overflow-hidden flex justify-center w-full transition-transform duration-500 '>
-                        <img className='max-w-[1600px] h-[340px] w-full object-cover object-top transition-transform duration-500 '
+                    <div className='overflow-hidden flex justify-center w-full transition-all duration-700 '>
+                        <img className='max-w-[1600px] h-[340px] w-full object-cover object-top transition-all duration-700 '
                             src={`../src/assets/img/carousel/${selecteImage}.webp`} alt="Image Banner" />
                     </div>
 

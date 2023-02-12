@@ -1,0 +1,132 @@
+{
+    "stores": [
+        {
+            "name": "Randers",
+            "logo": "https://http2.mlstatic.com/D_Q_NP_636207-MLA25899966797_082017-AE.webp",
+            "banner": "https://http2.mlstatic.com/storage/official-stores-images/randers/background_home201806080444.jpg",
+            "first_img": "https://http2.mlstatic.com/D_Q_NP_731554-MLA48173218596_112021-R.webp",
+            "seconnd_img": "https://http2.mlstatic.com/D_Q_NP_742564-MLA49004527142_022022-R.webp",
+            "third_img": "https://http2.mlstatic.com/D_Q_NP_792062-MLA48504506492_122021-R.webp"
+        },
+        {
+            "name": "Sportline",
+            "logo": "https://http2.mlstatic.com/D_Q_NP_636721-MLA25904474456_082017-AE.webp",
+            "banner": "https://http2.mlstatic.com/storage/official-stores-images/sportline/background_home201807241041.jpg",
+            "first_img": "https://http2.mlstatic.com/D_Q_NP_629075-MLA49447105214_032022-R.webp",
+            "seconnd_img": "https://http2.mlstatic.com/D_Q_NP_982414-MLA53561901908_022023-R.webp",
+            "third_img": "https://http2.mlstatic.com/D_Q_NP_627317-MLA52942674765_122022-R.webp"
+        },
+        {
+            "name": "REX",
+            "logo": "https://http2.mlstatic.com/D_Q_NP_777904-MLA32660949268_102019-AE.webp",
+            "banner": "https://http2.mlstatic.com/storage/official-stores-images/pintureriasrex/background_home201802011110.jpg",
+            "first_img": "https://http2.mlstatic.com/D_Q_NP_840180-MLA48945728214_012022-R.webp",
+            "seconnd_img": "https://http2.mlstatic.com/D_Q_NP_910223-MLA50485611418_062022-R.webp",
+            "third_img": "https://http2.mlstatic.com/D_Q_NP_991557-MLA45726266586_042021-R.webp"
+        },
+        {
+            "name": "Frávega",
+            "logo": "https://http2.mlstatic.com/D_Q_NP_929977-MLA25773062830_072017-AE.webp",
+            "banner": "https://http2.mlstatic.com/storage/official-stores-images/frvega/background_home201712111118.jpg",
+            "first_img": "https://http2.mlstatic.com/D_Q_NP_614617-MLA52109390879_102022-R.webp",
+            "seconnd_img": "https://http2.mlstatic.com/D_Q_NP_989916-MLA52735439497_122022-R.webp",
+            "third_img": "https://http2.mlstatic.com/D_Q_NP_784965-MLA53267173248_012023-R.webp"
+        },
+        {
+            "name": "LG",
+            "logo": "https://http2.mlstatic.com/D_Q_NP_975065-MLA25817097055_072017-AE.webp",
+            "banner": "https://http2.mlstatic.com/storage/official-stores-images/lg/background_home201801171034.jpg",
+            "first_img": "https://http2.mlstatic.com/D_Q_NP_658240-MLA41133399846_032020-R.webp",
+            "seconnd_img": "https://http2.mlstatic.com/D_Q_NP_947224-MLA46737987465_072021-R.webp",
+            "third_img": "https://http2.mlstatic.com/D_Q_NP_911797-MLA44712549409_012021-R.webp"
+        },
+        {
+            "name": "adidas Performance",
+            "logo": "https://mla-s1-p.mlstatic.com/687102-MLA45628970987_042021-AE.webp",
+            "banner": "https://http2.mlstatic.com/storage/official-stores-images/adidasperformance/background_home201711211123.jpg",
+            "first_img": "https://http2.mlstatic.com/D_Q_NP_615157-MLA53284178636_012023-R.webp",
+            "seconnd_img": "https://http2.mlstatic.com/D_Q_NP_709821-MLA46479907047_062021-R.webp",
+            "third_img": "https://http2.mlstatic.com/D_Q_NP_789271-MLA52249155495_112022-R.webp"
+        },
+        {
+            "name": "Samsung",
+            "logo": "https://http2.mlstatic.com/D_Q_NP_869939-MLA28051336464_082018-AE.webp",
+            "banner": "https://http2.mlstatic.com/storage/official-stores-images/samsung/background_home201902190516.jpg",
+            "first_img": "https://http2.mlstatic.com/D_Q_NP_993781-MLA50499672764_062022-R.webp",
+            "seconnd_img": "https://http2.mlstatic.com/D_Q_NP_662295-MLA51046914728_082022-R.webp",
+            "third_img": "https://http2.mlstatic.com/D_Q_NP_979796-MLA49312613599_032022-R.webp"
+        },
+        {
+            "name": "Peugeot Repuestos y Servicios",
+            "logo": "https://mla-s1-p.mlstatic.com/613869-MLA45017391866_022021-AE.webp",
+            "banner": "https://http2.mlstatic.com/storage/official-stores-images/peugeotrepuestosyservicios/background_home201907150216.jpg",
+            "first_img": "https://http2.mlstatic.com/D_Q_NP_634323-MLA53126475968_012023-R.webp",
+            "seconnd_img": "https://http2.mlstatic.com/D_Q_NP_910180-MLA52925851620_122022-R.webp",
+            "third_img": "https://http2.mlstatic.com/D_Q_NP_907944-MLA53130105550_012023-R.webp"
+        },
+        {
+            "name": "Simmons",
+            "logo": "https://http2.mlstatic.com/D_Q_NP_747379-MLA25913869258_082017-AE.webp",
+            "banner": "https://http2.mlstatic.com/storage/official-stores-images/simmons/background_home201803120215.jpg",
+            "first_img": "https://http2.mlstatic.com/D_Q_NP_696274-MLA42565805341_072020-R.webp",
+            "seconnd_img": "https://http2.mlstatic.com/D_Q_NP_976266-MLA42565793395_072020-R.webp",
+            "third_img": "https://http2.mlstatic.com/D_Q_NP_843658-MLA46348188427_062021-R.webp"
+        },
+        {
+            "name": "Philips",
+            "logo": "https://mla-s1-p.mlstatic.com/902765-MLA43138801201_082020-AE.webp",
+            "banner": "https://http2.mlstatic.com/storage/official-stores-images/philips/background_home201801260438.jpg",
+            "first_img": "https://http2.mlstatic.com/D_Q_NP_930902-MLA43623760984_092020-R.webp",
+            "seconnd_img": "https://http2.mlstatic.com/D_Q_NP_625268-MLA31010238466_062019-R.webp",
+            "third_img": "https://http2.mlstatic.com/D_Q_NP_843317-MLA47429727073_092021-R.webp"
+        },
+        {
+            "name": "Creciendo",
+            "logo": "https://http2.mlstatic.com/D_Q_NP_885288-MLA25803752942_072017-AE.webp",
+            "banner": "https://http2.mlstatic.com/storage/official-stores-images/creciendo/background_home201711290540.jpg",
+            "first_img": "https://http2.mlstatic.com/D_Q_NP_681346-MLA49020625087_022022-R.webp",
+            "seconnd_img": "https://http2.mlstatic.com/D_Q_NP_721314-MLA50182693175_062022-R.webp",
+            "third_img": "https://http2.mlstatic.com/D_Q_NP_758123-MLA31078172844_062019-R.webp"
+        },
+        {
+            "name": "Atma",
+            "logo": "https://http2.mlstatic.com/D_Q_NP_638962-MLA25716465289_062017-AE.webp",
+            "banner": "https://http2.mlstatic.com/storage/official-stores-images/atma/background_home201801171036.jpg",
+            "first_img": "https://http2.mlstatic.com/D_Q_NP_764617-MLA51775306391_092022-R.webp",
+            "seconnd_img": "https://http2.mlstatic.com/D_Q_NP_608665-MLA51570387678_092022-R.webp",
+            "third_img": "https://http2.mlstatic.com/D_Q_NP_691842-MLA48732976692_012022-R.webp"
+        },
+        {
+            "name": "Citroën Repuestos",
+            "logo": "https://http2.mlstatic.com/D_NQ_NP_921031-MLA52648640157_112022-AE.webp",
+            "banner": "https://http2.mlstatic.com/storage/official-stores-images/citronrepuestos/background_home202002130943.jpg",
+            "first_img": "https://http2.mlstatic.com/D_Q_NP_738064-MLA52776974120_122022-R.webp",
+            "seconnd_img": "https://http2.mlstatic.com/D_Q_NP_967852-MLA52998085918_122022-R.webp",
+            "third_img": "https://http2.mlstatic.com/D_Q_NP_850736-MLA53132395048_012023-R.webp"
+        },
+        {
+            "name": "HP Tienda Oficial",
+            "logo": "https://mla-s2-p.mlstatic.com/698488-MLA45917797720_052021-AE.webp",
+            "banner": "https://http2.mlstatic.com/storage/official-stores-images/hpstore/background_home201808311028.jpg",
+            "first_img": "https://http2.mlstatic.com/D_Q_NP_649844-MLA52647391301_112022-R.webp",
+            "seconnd_img": "https://http2.mlstatic.com/D_Q_NP_863746-MLA49151658209_022022-R.webp",
+            "third_img": "https://http2.mlstatic.com/D_Q_NP_815409-MLA49128218407_022022-R.webp"
+        },
+        {
+            "name": "Lego",
+            "logo": "https://http2.mlstatic.com/D_Q_NP_654961-MLA25716456961_062017-AE.webp",
+            "banner": "https://http2.mlstatic.com/storage/official-stores-images/lego/background_home201712060525.jpg",
+            "first_img": "https://http2.mlstatic.com/D_Q_NP_772830-MLA46895385779_072021-R.webp",
+            "seconnd_img": "https://http2.mlstatic.com/D_Q_NP_914365-MLA27318532871_052018-R.webp",
+            "third_img": "https://http2.mlstatic.com/D_Q_NP_641321-MLA51696708383_092022-R.webp"
+        },
+        {
+            "name": "Whirlpool",
+            "logo": "https://http2.mlstatic.com/D_Q_NP_871989-MLA25801430807_072017-AE.webp",
+            "banner": "https://http2.mlstatic.com/storage/official-stores-images/whirlpool/background_home201802161234.jpg",
+            "first_img": "https://http2.mlstatic.com/D_Q_NP_704294-MLA31353294567_072019-R.webp",
+            "seconnd_img": "https://http2.mlstatic.com/D_Q_NP_979080-MLA31023154382_062019-R.webp",
+            "third_img": "https://http2.mlstatic.com/D_Q_NP_704294-MLA31353294567_072019-R.webp"
+        }
+    ]
+}

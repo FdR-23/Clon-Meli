@@ -2,14 +2,13 @@ import React, { useState } from 'react'
 
 const EndPage = () => {
   const [open, setOpen] = useState(false);
-  console.log(open)
   const handletogle = () => {
     setOpen(!open)
   }
   return (
     <>
       <div className='mt-[74px] box-border block relative text-[13px] font-normal '>
-        <label onClick={() => handletogle()} className={`${open ? 'lg:bg-[#f7f7f7]' : 'lg:bg-[#fff] '} transition-all duration-700 border-[#e6e6e6]
+        <label onClick={() => handletogle()} className={`${open ? 'lg:bg-[#f7f7f7]' : 'lg:bg-[#fff] '} border-[#e6e6e6]
                     lg:border-[1px] lg:border-solid lg:border-[#e6e6e6] lg:text-[#666] lg:border-b-0 lg:cursor-pointer lg:px-[20px]
                     lg:h-[32px] lg:leading-[32px] lg:absolute translate-x-[-50%] lg:left-[50%] lg:bottom-[100%] lg:rounded-tr-[5px]
                      lg:rounded-tl-[5px] z-[1]  `}>
@@ -19,7 +18,7 @@ const EndPage = () => {
           </i>
         </label>
 
-        <div className={`${open ? 'lg:max-h-[270px]  ' : 'lg:max-h-0  lg:border-t-[0]'} lg:bg-[#f7f7f7] lg:mt-0  lg:transition-all lg:duration-200 lg:leading-[0] 
+        <div className={`${open ? 'lg:max-h-[270px]  ' : 'lg:max-h-0  lg:border-t-[0]'} lg:bg-[#f7f7f7] lg:mt-0  lg:transition-all lg:duration-300 lg:leading-[0] 
                  lg:border-t-[1px] lg:overflow-hidden  lg:border-solid lg:border-[#e6e6e6] lg:relative`}>
           <div className={` ${open ? 'lg:visible lg:flex lg:justify-between' : 'lg:invisible '} lg:px-[110px] lg:box-border lg:max-w-[1220px]  lg:mx-auto`}>
             <div className='w-auto leading-[1.6] my-[46px]'>
