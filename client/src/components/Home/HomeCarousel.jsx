@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 
+import image from '../../services/carouselImage.js'
 const HomeCarousel = () => {
-    const image = ["1", "2", "3", "4", "5", "6"]
+
     const [selectIndex, setSelectIndex] = useState(0);
     const [selecteImage, setSelectedImage] = useState(image[0]);
 
-    const selectNewImage = ( image, next = true) => {
+    const selectNewImage = (image, next = true) => {
         const condition = next ? selectIndex < image.length - 1 : selectIndex > 0;
         const nextIndex = next ?
             condition ? selectIndex + 1 : 0
@@ -35,7 +36,7 @@ const HomeCarousel = () => {
 
                     <div className='overflow-hidden flex justify-center w-full transition-all duration-700 '>
                         <img className='max-w-[1600px] h-[340px] w-full object-cover object-top transition-all duration-700 '
-                            src={`../src/assets/img/carousel/${selecteImage}.webp`} alt="Image Banner" />
+                            src={selecteImage} alt="Image Banner" />
                     </div>
 
                     <button className='absolute right-0 flex h-[64px] p-0 w-8 opacity-100 items-center rounded-tr-[64px] rounded-br-[64px]
@@ -54,8 +55,7 @@ const HomeCarousel = () => {
                         <li key={index} className='flex'>
                             <button className={`${selectIndex === index ? 'bg-white shadow-button-hover-pagination' :
                                 'bg-[#00000040] shadow-button-pagination '}
-                            w-[6px] h-[6px] 
-                       mx-[2px] rounded-[50%]`}
+                                w-[6px] h-[6px] mx-[2px] rounded-[50%]`}
                                 type="button">
                                 <div className="absolute w-[1px] h-[1px] mr-[-1px] mb-[-1px] whitespace-nowrap overflow-hidden ">
                                     {elemet}</div>
