@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import EndPage from './components/EndPage'
 import Home from './page/Home'
-import ListProductSearched from './components/ListProductSearched'
+import ListProductSearched from './page/ListProductSearched'
 import MoreCategories from './components/MoreCategories'
 
 function App() {

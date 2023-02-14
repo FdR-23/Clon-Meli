@@ -25,18 +25,18 @@ const PaymentsHome = () => {
                             </a>
                             <div className="inline-block mt-1px">Tarjeta de débito</div>
                             <div className="text-[#999] text-sm mt-[-1px]">
-                                <a className='text-[#3483fa] hover:text-[#1259c3] cursor-pointer' data-title="Medios de pago" aria-label="Tarjeta de débito, Ver más">Ver más</a>
+                                <a className='text-[#3483fa] hover:text-[#1259c3] cursor-pointer'>Ver más</a>
                             </div>
                         </div>
 
                         <div className="flex-grow basis-auto text-lg h-[90px] p-5 whitespace-nowrap">
-                            <a className="float-left h-[54px] mr-[16px] w-[48px]" href="https://mercadolibre.com.ar/mercado-credito/cuotas-sin-tarjeta/?sk=RHRsnBTf" target="_blank" data-title="Medios de pago">
+                            <a className="float-left h-[54px] mr-[16px] w-[48px]" >
                                 <img decoding="async" src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/payments/mercado-creditsv2.svg" alt="Cuotas sin tarjeta" />
                             </a>
                             <div className="inline-block mt-1px">Cuotas sin tarjeta</div>
 
                             <div className="text-[#999] text-sm mt-[-1px]">
-                                <a className='text-[#3483fa] hover:text-[#1259c3]' href="https://mercadolibre.com.ar/mercado-credito/cuotas-sin-tarjeta/?sk=RHRsnBTf" target="_blank" modal_title="Medios de pago" data-title="Medios de pago">Conocé Mercado Crédito</a>
+                                <a className='text-[#3483fa] hover:text-[#1259c3]' href="https://mercadolibre.com.ar/mercado-credito/cuotas-sin-tarjeta/?sk=RHRsnBTf" >Conocé Mercado Crédito</a>
                             </div>
                         </div>
 

@@ -13,7 +13,7 @@ import DiscoverOfert from '../components/Home/DiscoverOfert.jsx'
 import AdnArea from '../components/Home/AdnArea.jsx'
 import OfficialStore from '../components/Home/OfficialStore/OfficialStore.jsx'
 import Banner from '../components/Banner.jsx'
-
+import Offerts from '../components/Home/Offerts/Offerts.jsx'
 const Home = () => {
     const [open, setOpen] = useState(true);
 
@@ -21,12 +21,13 @@ const Home = () => {
         setOpen(!open)
     }
     if (open) {
-        return <Banner  setToggle={handletoggle} />
+        return <Banner setToggle={handletoggle} />
     }
     return (
         <main className='flex flex-col lg:w-full lg:block lg:h-auto bg-main'>
             <HomeCarousel />
             <PaymentsHome />
+            <Offerts />
             <HomeSubcripcion />
             <PartnersSub />
             <AdnArea />

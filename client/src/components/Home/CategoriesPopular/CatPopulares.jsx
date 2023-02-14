@@ -1,14 +1,11 @@
 import React, { useState } from 'react'
 import ListPopularCategories from './ListPopularCategories'
-import { category } from '../../../assets/json/ListCategories.json'
-
-
+import DataCategories from '../../../services/ListCategories.js'
 
 const CatPopulares = () => {
+    const category = DataCategories.category;
     const [isHovered, setIsHovered] = useState(false);
     const [displayCategories, setDisplayCategories] = useState(0)
-
-
 
     const handleChangeCategories = (action = 'next' | 'previous') => {
         const cantCool = Math.ceil(category.length / 2)
@@ -17,7 +14,6 @@ const CatPopulares = () => {
         if (action === 'previous') {
             const prevState = (prevState) => {
                 if (prevState + widthDisplay >= 0) {
-
                     return 0
                 }
                 return prevState + widthDisplay;
@@ -37,6 +33,11 @@ const CatPopulares = () => {
             setDisplayCategories(prevState);
         }
     };
+    const displayStyle = {
+        width: '5100px',
+        transform: `translateX(${displayCategories}px)`,
+        transition: 'transform 400ms ease',
+    };
 
     const handleMouseEnter = () => {
         setIsHovered(true);
@@ -55,11 +56,10 @@ const CatPopulares = () => {
                     <div className='static' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
 
                         <div className='static block '>
-
                             <div className='m-0 p-0 overflow-hidden bock relative '>
-
-                                <div className={`opacity-100 w-[5100px] translate-x-[${displayCategories}px]
-                                block left-0 relative top-0 transition-all duration-700 before:table`}>
+                                <div className={`opacity-100  translate-x-[${displayCategories}px]
+                                block left-0 relative top-0  `}
+                                    style={displayStyle}>
                                     <ListPopularCategories />
                                 </div>
                             </div>
@@ -80,7 +80,7 @@ const CatPopulares = () => {
                                 before:bg-[#3483fa] before:block before:h-[2px] before:absolute before:w-[14px] 
                                 after:bottom-[50%] after:mb-[-6px] after:left-[50%] after:ml-[-8px] after:-rotate-45
                                 after:bg-[#3483fa] after:block after:h-[2px] after:absolute after:w-[14px]
-                                ${isHovered ? 'visible' : 'invisible'} `}>
+                                ${isHovered ? 'visible' : 'invisible'}  `}>
                                 </button>
                                 <ul className='block right-[5px] top-[50px] w-auto h-0
                                 bottom-[-25px] absolute text-center  '>
@@ -104,25 +104,11 @@ const CatPopulares = () => {
                                     </li>
                                 </ul>
                             </div>
-
-
                         </div>
+
                     </div>
-
-
-
                 </div>
-
-
             </div>
-
-
-
-
-
-
-
-
         </section>
     )
 }

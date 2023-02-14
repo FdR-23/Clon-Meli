@@ -1,0 +1,49 @@
+{
+    "offerts": [
+        {
+            "img": "https://http2.mlstatic.com/D_Q_NP_608172-MLA53351140125_012023-AB.webp",
+            "after_price": "129.358",
+            "after_price_cents": "88",
+            "price": "76.999",
+            "discont": "40% OFF",
+            "info_couts": "Mismo precio en 6 cuotas de $12.833",
+            "more_description": "Bicicleta Mtb Totem By Topmega R29 21v Disco,susp. V/colores"
+        },
+        {
+            "img": "https://http2.mlstatic.com/D_Q_NP_967433-MLA53089488406_122022-AB.webp",
+            "after_price": "100.799",
+            "after_price_cents": "",
+            "price": "64.999",
+            "discont": "35% OFF",
+            "info_couts": "",
+            "more_description": "Heladera Bajo Mesada Siam Hsi-bm093p 83 L Plata"
+        },
+        {
+            "img": "https://http2.mlstatic.com/D_Q_NP_904408-MLA52377361889_112022-AB.webp",
+            "after_price": "74.999",
+            "after_price_cents": "",
+            "price": "46.999",
+            "discont": "37% OFF",
+            "info_couts": "",
+            "more_description": "Smart Tv Noblex Dk32x7000pi Led Hd 32 Android Tv"
+        },
+        {
+            "img": "https://http2.mlstatic.com/D_Q_NP_904024-MLA52988874995_122022-AB.webp",
+            "after_price": "43.999",
+            "after_price_cents": "",
+            "price": "39.999",
+            "discont": "9% OFF",
+            "info_couts": "",
+            "more_description": "Moto E22i 32gb 2gb Ram Gris "
+        },
+        {
+            "img": "https://http2.mlstatic.com/D_Q_NP_719031-MLA48801501810_012022-AB.webp",
+            "after_price": "15.999",
+            "after_price_cents": "",
+            "price": "14.299",
+            "discont": "10% OFF",
+            "info_couts": "",
+            "more_description": "Licuadora Peabody PE-LN805 1.75 L roja con jarra de vidrio 220V"
+        }
+    ]
+}

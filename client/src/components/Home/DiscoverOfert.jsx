@@ -11,7 +11,7 @@ const DiscoverOfert = () => {
             </h2>
         </div>
         <div className='pr-[8px] w-full flex pl-[8px]'>
-            <a className='mt-[15px] mr-[15px] lg:max-w-[584px] w-[50%]
+            <a className='mb-[15px] mr-[15px] lg:max-w-[584px] w-[50%]
             bg-white rounded shadow-nav-shadow hover:shadow-cart-discovery h-[250px] overflow-hidden flex'>
                 <div className='self-center flex flex-col flex-grow flex-shrink-0 flex-auto mr-[32px] py-[32px] pl-[32px]'>
                     <span className='text-[12px] tracking-wide mb-[12px] 
@@ -35,7 +35,7 @@ const DiscoverOfert = () => {
                         src="https://http2.mlstatic.com/D_NQ_945598-MLA53606274951_022023-C.webp" alt="OFERTAS DIVERTIDAS" />
                 </div>
             </a>
-            <a className='mt-[15px] mr-[15px] lg:max-w-[584px] w-[50%]
+            <a className='mb-[15px] mr-[15px] lg:max-w-[584px] w-[50%]
             bg-white rounded shadow-nav-shadow hover:shadow-cart-discovery h-[250px] overflow-hidden flex'>
                 <div className='self-center flex flex-col flex-grow flex-shrink-0 flex-auto mr-[32px] py-[32px] pl-[32px]'>
                     <span className='text-[12px] tracking-wide mb-[12px] 

@@ -16,7 +16,10 @@ module.exports = {
       'button-hover-pagination': '0 0 0 1px rgb(0 0 0 / 25%)',
       'cart-discovery': '0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%)',
       'button-categorie': '0 2px 4px 0 rgb(0 0 0 / 19%)',
-      'hover-button-categorie': '0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);'
+      'hover-button-categorie': '0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);',
+      'oficial-store-logo': '0 2px 15px 0 rgb(0 0 0 / 10%)',
+      'card-oficial-store': '0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%)',
+      'card-offer':'0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);'
     },
     extend: {
       fontFamily: {
