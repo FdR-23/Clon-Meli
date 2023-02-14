@@ -51,8 +51,7 @@ const OfficialStore = () => {
                             <div className='opacity-100 w-[7200px] block relative first-line:left-0 top-0 '
                                 style={displayStyle}>
                                 {stores && stores.map((element, index) =>
-                                    <CardOfficialStore
-                                        key={index}
+                                    <CardOfficialStore key={index}
                                         stores={element} />)}
                             </div>
                         </div>

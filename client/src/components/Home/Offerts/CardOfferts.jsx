@@ -1,11 +1,10 @@
 import React from 'react'
 
 const CardOfferts = ({ item }) => {
-
     return (
         <div className='w-[240px] relative block float-left h-[full] min-h-[1px] whitespace-nowrap'>
             <div className='h-[350px] mb-[16px] mx-[8px] w-[224px] block'>
-                <div className='after:rounded after:h-full after:w-full after:shadow-card-offer after:opacity-100 after:absolute after:top-0 
+                <div className='after:rounded after:h-full after:w-full  after:opacity-100 after:absolute after:top-0 
                     h-[350px] w-[224px] inline-block align-top  whitespace-normal bg-white relative
                     rounded text-[#333] hover:h-auto max-h-[402px] min-h-[350px]
                      [&>div>p]:hover:visible [&>div>div]:hover:mt-[9px] [&>div>div>div>s]:hover:visible  hover:shadow-card-offer'>
