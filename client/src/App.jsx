@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import NavBar from './components/NavBar'
+import NavBar from './components/NavBar/NavBar.jsx'
 import EndPage from './components/EndPage'
-import Home from './page/Home'
-import ListProductSearched from './page/ListProductSearched'
-import MoreCategories from './components/MoreCategories'
+import Home from './page/Home.jsx'
+import ListProductSearched from './page/ListProductSearched.jsx'
+import MoreCategories from './page/MoreCategories.jsx'
 
 function App() {
 

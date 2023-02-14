@@ -82,13 +82,8 @@ const EndPage = () => {
           </div>
 
         </div>
-
-
-
       </div>
-
-
-
+      
       <footer className='lg:block lg:bg-white lg:border-[#e6e6e6]
       lg:border-t-[1px] lg:border-solid lg:border-t-[#eee] lg:leading-[1] lg:text-[13px] font-normal'>
 

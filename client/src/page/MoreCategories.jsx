@@ -1,5 +1,5 @@
 import React from 'react'
-import { useMenuContext } from './MenuProvider'
+import { useMenuContext } from '../components/MenuProvider'
 
 const MoreCategories = () => {
 

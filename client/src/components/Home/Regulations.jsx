@@ -8,7 +8,7 @@ const Regulations = () => {
                 <div className='flex flex-row gap-[10px] justify-end '>
                     <div className=' flex items-center '>
                         <a className='text-[#737373] text-[16px] font-semibold leading-5 '>
-                            <img className='mb-[-1px] mr-[5px] ' decoding="async" src="https://http2.mlstatic.com/frontend-assets/homes-palpatine/./help-email/icon_email.svg" />
+                            <img className='mb-[-1px] mr-[5px] relative right-7 top-4' decoding="async" src="https://http2.mlstatic.com/frontend-assets/homes-palpatine/./help-email/icon_email.svg" />
                             <span >ayuda@mercadolibre.com.ar</span>
                         </a>
                     </div>

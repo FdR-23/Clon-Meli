@@ -1,9 +1,9 @@
 import React from 'react'
 
 
-import beneficio_img from '../assets/img/beneficios.webp'
-import logo_large_img from '../assets/img/logos/logo__large_plus.png'
-import logo_small_img from '../assets/img/logos/logo__small.png'
+import beneficio_img from '../../assets/img/beneficios.webp'
+import logo_large_img from '../../assets/img/logos/logo__large_plus.png'
+import logo_small_img from '../../assets/img/logos/logo__small.png'
 import NavMenu from './NavMenu'
 import MenuItems from './SubMenuICategory'
 
