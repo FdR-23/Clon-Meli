@@ -3,7 +3,7 @@ import React from 'react'
 const HomeSubcripcion = () => {
     return (
         <section>
-            <div className='flex flex-wrap relative my-0 mx-auto max-w-[1200px] py-[40px] '>
+            <div className='flex flex-wrap relative my-0 mx-5 lg:mx-auto max-w-[1200px] py-[40px] '>
                 <div className='bg-white rounded-md shadow-nav-shadow ml-[10px] overflow-hidden w-[1180px]'>
                     <div className='text-white flex justify-between items-center min-h-[55px] py-[16px] px-[24px]
                         bg-gradient-to-r from-[#a90f90] to-[#0c1a51] box-content'>

@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const PartnersSub = () => {
+
     return (
         <section>
-            <div className='flex flex-wrap relative mx-auto max-w-[1200px] py-[40px] ' >
+            <div className='flex flex-wrap relative mx-5  lg:mx-auto  max-w-[1200px] py-[40px] overflow-hidden' >
 
-                <div className='mb-[22px] items-center flex leading-[1.2]'>
+                <div className='mb-[22px] items-center flex leading-[1.2] '>
                     <h2 className='text-[26px] font-light ml-[8px] text-[#666] '>
                         Beneficios de Mercado Puntos
                     </h2>
@@ -14,10 +15,10 @@ const PartnersSub = () => {
                     </a>
                 </div>
 
-                <div className='ml-[-10px] mr-[-10px] min-w-[1200px] pl-[10px] pr-[10px] w-full box-content'>
+                <div className='ml-[-10px] mr-[-10px] w-full  lg:min-w-[1200px] pl-[10px] pr-[10px]  box-content'>
                     <div className='relative'>
-                        <div className='static block'>
-                            <div className='h-[266px] overflow-hidden block relative'>
+                        <div className='static block  '>
+                            <div className='h-[266px] block relative ' >
                                 <div className='opacity-100 w-[3600px] block relative left-0 top-0'>
 
                                     <div className='w-[400px] relative block float-left h-full min-h-[1px]'>

@@ -48,17 +48,17 @@ const CatPopulares = () => {
 
     return (
         <section>
-            <div className='flex flex-wrap relative mx-auto max-w-[1200px] py-[40px] '>
-                <div className='mb-[22px] items-center flex leading-[1.2]'>
+            <div className='flex flex-wrap relative mx-10 lg:mx-auto max-w-[1200px] py-[40px] '>
+                <div className='mb-[22px] items-center flex leading-[1.2] '>
                     <h2 className='text-[26px] font-light ml-2 w-full text-[#666]'>Categorías populares</h2>
                 </div>
                 <div className='rounded shadow-nav-shadow ml-[10px] overflow-hidden h-[340px] '>
                     <div className='static' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
 
                         <div className='static block '>
-                            <div className='m-0 p-0 overflow-hidden bock relative '>
+                            <div className='m-0 p-0 overflow-hidden bock relative  '>
                                 <div className={`opacity-100  translate-x-[${displayCategories}px]
-                                block left-0 relative top-0  `}
+                                block left-0 relative top-0  overflow-x-scroll lg:overflow-x-visible`}
                                     style={displayStyle}>
                                     <ListPopularCategories />
                                 </div>

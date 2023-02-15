@@ -1,14 +1,15 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import CardOfferts from './CardOfferts'
 import { offerts } from '../../../assets/json/ListOfferts.json'
 const Offerts = () => {
 
   const [displayCategories, setDisplayCategories] = useState(0)
-
+  console.log("width", window.innerWidth)
+  const width = window.innerWidth > 1200 ? 1200 : window.innerWidth;
   const handleChangeCategories = (action = 'next' | 'previous') => {
     const cantCool = Math.ceil(offerts.length)
     const columnSize = 240;
-    const widthDisplay = 1200;
+    const widthDisplay = width;
     if (action === 'previous') {
       const prevState = (prevState) => {
         if (prevState + widthDisplay >= 0) {
@@ -39,14 +40,15 @@ const Offerts = () => {
   return (
     <section>
       <div className='flex flex-wrap mb-[30px] pb-[70px] relative
-                mx-auto max-w-[1200px] py-10'>
-        <div className='mb-[22px] box-border items-center flex leading-[1.2]'>
+                 max-w-[1200px] py-10   mx-[40px]  lg:mx-auto  '>
+        <div className='mb-[22px] box-border items-center flex leading-[1.2] '>
           <h2 className='text-[26px] font-light pl-2 text-[#666] box-border'>Ofertas</h2>
           <a className='text-[16px] mb-[2px] ml-[16px] self-baseline text-[#3483fa] mt-auto cursor-pointer'>Ver tiendas</a>
         </div>
-        <div className='w-[1200px] min-w-[1200px] relative blcok '>
+        <div className='w-full  relative block box-border '>
           <div className='static block '>
-            <div className=' h-[415px] mb-[-88px] whitespace-nowrap overflow-hidden m-0 p-0 block relative '>
+            <div className=' h-[415px] mb-[-88px] whitespace-nowrap overflow-hidden 
+             m-0 p-0 block relative'>
               <div className='opacity-100 w-[8400px] block left-0 relative top-0 ' style={displayStyle}>
                 {offerts && offerts.map((element, index) =>
                   <CardOfferts
@@ -58,7 +60,7 @@ const Offerts = () => {
             </div>
             <div>
               <button onClick={() => handleChangeCategories('previous')}
-                className={`block top-[120px] bg-white rounded-[50%] border-[0] shadow-button-categorie
+                className={` block top-[120px] bg-white rounded-[50%] border-[0] shadow-button-categorie
                                 cursor-pointer h-[64px] absolute left-[-24px] w-[64px] z-[2] hover:shadow-hover-button-categorie
                                 before:mt-[-5px] before:top-[50%] before:ml-[-8px] before:left-[50%] before:-rotate-45
                                 before:bg-[#3483fa] before:block before:h-[2px] before:absolute before:w-[14px] 

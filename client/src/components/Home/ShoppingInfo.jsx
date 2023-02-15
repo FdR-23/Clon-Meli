@@ -3,7 +3,7 @@ import React from 'react'
 const ShoppingInfo = () => {
     return (
         <section className='bg-white mt-[20px] overflow-hidden'>
-            <div className='max-w-[1200px] mx-auto py-[40px]'>
+            <div className='max-w-[1200px] mx-5 lg:mx-auto py-[40px]'>
                 <div className='float-left w-[33.333%] box-border pt-[35px] px-[45px] pb-[20px] relative text-center'>
                     <div className='h-[55px]'>
                         <img className='m-auto' decoding="async" src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/ecosystem/payment.svg"

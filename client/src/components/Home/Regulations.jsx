@@ -3,7 +3,7 @@ import React from 'react'
 const Regulations = () => {
     return (
         <section className='bg-[#fff] block  '>
-            <div className='p-[10px] mx-auto max-w-[1200px] box-content'>
+            <div className='p-[10px] m-5 lg:mx-auto max-w-[1200px] box-content'>
 
                 <div className='flex flex-row gap-[10px] justify-end '>
                     <div className=' flex items-center '>

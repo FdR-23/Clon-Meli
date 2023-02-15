@@ -4,7 +4,7 @@ const PaymentsHome = () => {
     return (
         <section className='mb-[-30px] min-h-0' type='payments'>
 
-            <div className='max-w-full px-2 mx-auto py-[40px]'>
+            <div className='max-w-full px-2 mx-5 lg:mx-auto py-[40px]'>
                 <div className='bg-white rounded shadow-nav-shadow flex h-[90px] my-0 mx-auto max-w-[1184px] overflow-hidden'>
 
                     <div className='flex-auto flex flex-wrap'>

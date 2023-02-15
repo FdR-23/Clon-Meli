@@ -6,9 +6,11 @@ const OfficialStore = () => {
     const [displayCategories, setDisplayCategories] = useState(0)
 
     const handleChangeCategories = (action = 'next' | 'previous') => {
+          const width = window.innerWidth > 1200 ? 1200 : window.innerWidth;
+          console.log(width)
         const cantCool = Math.ceil(stores.length)
         const columnSize = 300;
-        const widthDisplay = 1200;
+        const widthDisplay = width;
         if (action === 'previous') {
             const prevState = (prevState) => {
                 if (prevState + widthDisplay >= 0) {
@@ -39,16 +41,16 @@ const OfficialStore = () => {
     return (
         <section>
             <div className='flex flex-wrap mb-[30px] pb-[70px] relative
-                mx-auto max-w-[1200px] py-10'>
-                <div className='mb-[22px] box-border items-center flex leading-[1.2]'>
+                mx-[40px]  lg:mx-auto  max-w-[1200px] py-10 '>
+                <div className='mb-[22px] box-border items-center flex leading-[1.2] '>
                     <h2 className='text-[26px] font-light pl-2 text-[#666] box-border'>Las mejores tiendas te esperan</h2>
                     <a className='text-[16px] mb-[2px] ml-[16px] self-baseline text-[#3483fa] mt-auto cursor-pointer'>Ver tiendas</a>
                 </div>
-                <div className='min-w-[870px] w-full box-border block relative'>
+                <div className='lg:min-w-[870px] w-full box-border block relative'>
                     <div className='static block '>
                         <div className='mb-[14px] pb-[-14px] h-[342px] box-content overflow-hidden '>
 
-                            <div className='opacity-100 w-[7200px] block relative first-line:left-0 top-0 '
+                            <div className='opacity-100  block relative first-line:left-0 top-0 '
                                 style={displayStyle}>
                                 {stores && stores.map((element, index) =>
                                     <CardOfficialStore key={index}

@@ -21,16 +21,16 @@ const Home = () => {
         setOpen(!open)
     }
     if (open) {
-        return <Banner setToggle={handletoggle} />
+        return <Banner  setToggle={handletoggle} />
     }
     return (
-        <main className='flex flex-col lg:w-full lg:block lg:h-auto bg-main'>
+        <main className='flex flex-col w-full h-auto lg:block  bg-main'>
             <HomeCarousel />
             <PaymentsHome />
-            <Offerts />
+            <Offerts/>
             <HomeSubcripcion />
             <PartnersSub />
-            <AdnArea />
+            <AdnArea/>
             <Discovery />
             <OfficialStore />
             <DiscoverOfert />

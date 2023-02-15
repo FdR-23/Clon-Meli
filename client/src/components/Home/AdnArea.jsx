@@ -2,7 +2,7 @@ import React from 'react'
 
 const AdnArea = () => {
     return (
-        <section className='mx-auto max-w-[1180px]'>
+        <section className=' hidden md:block mx-5 lg:mx-auto max-w-[1180px]'>
             <div className='py-10 '>
 
                 <div className='rounded overflow-hidden relative flex aspect-[118/25]'>
@@ -11,7 +11,7 @@ const AdnArea = () => {
                         <img className='w-full h-auto absolute left-[50%] translate-x-[-50%] min-h-[100%]' alt="adn-picture" src="https://http2.mlstatic.com/D_NQ_817191-MLA53559372167_022023-OO.jpg" />
                         <div className='absolute flex flex-col ml-[9%] w-full'>
                             <div className='flex flex-col '>
-                                <img className='w-[96px] h-[64px] p-4  m-0 box-content
+                                <img className='w-[96px] h-[64px] p-0 lg:p-4  m-0 box-content
                                  bg-white rounded aspect-[4/3] object-contain' alt="adn-logo" src="https://http2.mlstatic.com/D_NQ_814693-MLA53559372171_022023-OO.jpg" />
                             </div>
                         </div>
@@ -19,8 +19,8 @@ const AdnArea = () => {
 
                     <div className='bg-[#8533af] text-white w-[41%] px-[5.4%] pt-[5.4%] pb-[3.6%] ml[-1] flex flex-col justify-between'>
                         <div>
-                            <p className='text-[28px] leading-[32px] font-semibold '>OFERTAS Y </p>
-                            <p className='text-[28px] leading-[32px] font-semibold '>HASTA 12 CUOTAS</p>
+                            <p className='text-[20px] lg:text-[28px] leading-[32px] font-semibold '>OFERTAS Y </p>
+                            <p className='text-[20px] lg:text-[28px] leading-[32px] font-semibold '>HASTA 12 CUOTAS</p>
                         </div>
                         <div className='mb-[8.9%] flex items-center'>
                             <p className='text-[18px] leading-[18px] font-normal items-center'>

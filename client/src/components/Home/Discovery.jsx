@@ -3,7 +3,7 @@ import React from 'react'
 const Discovery = () => {
     return (
         <section>
-            <div className='flex flex-wrap relative mx-auto max-w-[1200px] py-[40px]'>
+            <div className='hidden lg:flex flex-wrap relative mx-[20px]  lg:mx-auto  max-w-[1200px] py-[40px]'>
 
                 <div className='mb-[22px] items-center flex leading-[1.2]'>
                     <h2 className='text-[26px] font-light ml-[8px] text-[#666] block '>

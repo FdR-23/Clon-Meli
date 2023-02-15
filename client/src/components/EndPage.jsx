@@ -8,7 +8,7 @@ const EndPage = () => {
   return (
     <>
       <div className='mt-[74px] box-border block relative text-[13px] font-normal '>
-        <label onClick={() => handletogle()} className={`${open ? 'lg:bg-[#f7f7f7]' : 'lg:bg-[#fff] '} border-[#e6e6e6]
+        <label onClick={() => handletogle()} className={`hidden lg:block ${open ? 'lg:bg-[#f7f7f7]' : 'lg:bg-[#fff] '} border-[#e6e6e6]
                     lg:border-[1px] lg:border-solid lg:border-[#e6e6e6] lg:text-[#666] lg:border-b-0 lg:cursor-pointer lg:px-[20px]
                     lg:h-[32px] lg:leading-[32px] lg:absolute translate-x-[-50%] lg:left-[50%] lg:bottom-[100%] lg:rounded-tr-[5px]
                      lg:rounded-tl-[5px] z-[1]  `}>
@@ -18,7 +18,7 @@ const EndPage = () => {
           </i>
         </label>
 
-        <div className={`${open ? 'lg:max-h-[270px]  ' : 'lg:max-h-0  lg:border-t-[0]'} lg:bg-[#f7f7f7] lg:mt-0  lg:transition-all lg:duration-300 lg:leading-[0] 
+        <div className={`hidden lg:block ${open ? 'lg:max-h-[270px]  ' : 'lg:max-h-0  lg:border-t-[0]'} lg:bg-[#f7f7f7] lg:mt-0  lg:transition-all lg:duration-300 lg:leading-[0] 
                  lg:border-t-[1px] lg:overflow-hidden  lg:border-solid lg:border-[#e6e6e6] lg:relative`}>
           <div className={` ${open ? 'lg:visible lg:flex lg:justify-between' : 'lg:invisible '} lg:px-[110px] lg:box-border lg:max-w-[1220px]  lg:mx-auto`}>
             <div className='w-auto leading-[1.6] my-[46px]'>
@@ -90,9 +90,9 @@ const EndPage = () => {
         <div className='py-[16px] px-[10px] max-w-[1200px] border-none box-content block m-auto'>
           <div className=' text-[#999] '>
             <div className='align-top relative h-10'>
-              <nav className='inline-block text-[0]'>
+              <nav className=' inline-block text-[0]'>
                 <small className='absolute top-5 m-0 text-xs w-auto'>Copyright ©&nbsp;1999-2023 MercadoLibre S.R.L.</small>
-                <ul className='flex'>
+                <ul className='hidden lg:flex'>
                   <li><a className='hover:text-black text-[13px] text-[#333] cursor-pointer pl-0 px-2'>Trabajá con nosotros</a></li>
                   <li><a className='hover:text-black text-[13px] text-[#333] cursor-pointer px-2'>Términos y condiciones</a></li>
                   <li><a className='hover:text-black text-[13px] text-[#333] cursor-pointer px-2'>Cómo cuidamos tu privacidad</a></li>

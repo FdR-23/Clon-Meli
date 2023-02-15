@@ -4,7 +4,7 @@ const CardOfficialStore = ({ stores }) => {
     
     return (
         <div className='w-[300px] relative block box-border 
-        float-left h-full min-h-1px'>
+        float-left h-full min-h-1px '>
             <div className='bg-white rounded cursor-pointer box-border shadow-nav-input h-[340px] mx-[8px] mb-[20px]
                 bg-wgite  overflow-hidden hover:shadow-card-oficial-store [&>div>a]:hover:text-[#3483fa]'>
 
