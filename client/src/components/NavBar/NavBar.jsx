@@ -31,7 +31,7 @@ const NavBar = () => {
                 {/* ---SEARCH PRODUCTS--- */}
 
                 <a className='absolute left-[10px] top-[11px] cursor-pointer'
-                    tabIndex="2">
+                    href='/' tabIndex="2">
                     <img className='lg:w-[134px] lg:h-[34px] lg:top-[11px] hidden lg:inline-block' src={logo_large_img} alt="nav_logo_large" />
                     <img className='w-[44px] h-[31px] lg:hidden' src={logo_small_img} alt="nav_logo_small" />
                 </a>
@@ -79,7 +79,7 @@ const NavBar = () => {
                     </i>
 
                 </a>
-                <a className=' text-[#736c28]  block h-[39px] whitespace-nowrap overflow-hidden
+                <a className='block lg:hidden text-[#736c28]   h-[39px] whitespace-nowrap overflow-hidden
                     text-ellipsis  pt-[1px] pr-[30px] pl-[28px] leading-[38px] 
                     relative  text-[16px] w-full
                     before:content-[""] before:font-navigation before:left-[10px] before:absolute before:text-[16px]
