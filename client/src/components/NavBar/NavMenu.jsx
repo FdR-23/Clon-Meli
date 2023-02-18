@@ -34,24 +34,19 @@ export const NavMenu = () => {
         setOpent(!open)
     }
 
-    const handleMouseEnter = () => {
-        setTimeout(() => {
-            setIsHovered(true);
-        }, 500);
-    };
+    // const handleMouseEnter = () => {
+    //     setTimeout(() => {
+    //         setIsHovered(true);
+    //     }, 500);
+    // };
 
-    const handleMouseLeave = () => {
-
-        setIsHovered(false);
-
-    };
+    // const handleMouseLeave = () => {
+    //     setIsHovered(false);
+    // };
 
 
     return (
-
         <div className='  block ml-[-150px] max-w-[785px] '>
-            
-            
             <ul className='hidden lg:block lg:pt-3 lg:h-9 lg:m-0 lg:overflow-hidden 
             [&>li>a]:text-sm [&>li>a]:leading-[22px]  [&>li]:inline-block [&>li]:cursor-pointer [&>li]:text-[#333] '>
                 <li className=' pr-[18px]  float-left  w-[186px]'>
@@ -67,10 +62,10 @@ export const NavMenu = () => {
                         >Capital Federal</span>
                     </a>
                 </li>
-                <li onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                    className=' pr-[18px] pl-[186px] w-auto float-left font-normal'>
-                    <button onClick={(e) => handleToggle(e)}
+                <li className=' pr-[18px] pl-[186px] w-auto float-left font-normal'>
+                    <button
+                       
+                        onClick={(e) => handleToggle(e)}
                         className='after:w-[6px] after:h-[6px] after:relative after:mt-[8px] after:ml-[6px] 
                 after:border-solid after:border-r-[1.5px] after:border-b-[1.5px] after:border-[#0000004d] after:transition-all after:ease-out after:duration-300 
                  after:inline-block  after:rotate-45 after:align-top  leading-[22px]

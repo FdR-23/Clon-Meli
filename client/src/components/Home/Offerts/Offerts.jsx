@@ -4,7 +4,6 @@ import { offerts } from '../../../assets/json/ListOfferts.json'
 const Offerts = () => {
 
   const [displayCategories, setDisplayCategories] = useState(0)
-  console.log("width", window.innerWidth)
   const width = window.innerWidth > 1200 ? 1200 : window.innerWidth;
   const handleChangeCategories = (action = 'next' | 'previous') => {
     const cantCool = Math.ceil(offerts.length)
