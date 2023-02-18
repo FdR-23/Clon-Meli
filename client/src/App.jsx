@@ -5,7 +5,7 @@ import EndPage from './components/EndPage'
 import Home from './page/Home.jsx'
 import ListProductSearched from './page/ListProductSearched.jsx'
 import MoreCategories from './page/MoreCategories.jsx'
-import ProductNotFound from './components/ProductNotFound.jsx'
+import ProductNotFound from './components/ProductSearched/ProductNotFound.jsx'
 
 function App() {
 
