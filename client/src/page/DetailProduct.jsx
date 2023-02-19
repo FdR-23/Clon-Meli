@@ -265,6 +265,7 @@ const DetailProduct = () => {
             </div>
 
             <div className='ml-[50px] w-[718px]  box-border'>
+              <section className='w-full'></section>
               <div className='py-[40px] border-t-[1px] borde-solid border-[#0000001a]
                 flex flex-row flex-wrap'>
                 <div className='flex-1 w-full text-[#000000e6] box-border'>
