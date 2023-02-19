@@ -6,7 +6,7 @@ import Home from './page/Home.jsx'
 import ListProductSearched from './page/ListProductSearched.jsx'
 import MoreCategories from './page/MoreCategories.jsx'
 import ProductNotFound from './components/ProductSearched/ProductNotFound.jsx'
-
+import DetailProduct from './page/DetailProduct.jsx'
 function App() {
 
 
@@ -18,6 +18,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/more-category' element={<MoreCategories />} />
         <Route path='/search-product/search' element={<ListProductSearched />} />
+        <Route path='/product_details/:id' element={<DetailProduct />} />
         <Route path='/product-not-found' element={<ProductNotFound />} />
       </Routes>
       <EndPage />

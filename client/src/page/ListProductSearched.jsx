@@ -28,8 +28,7 @@ const ListProductSearched = () => {
     }, [query])
 
 
-
-
+  
 
     console.log("Liusta de products", products)
 
@@ -89,7 +88,7 @@ const ListProductSearched = () => {
                                                 <div>
                                                     <button className='items-center flex '>
                                                         <span className='overflow-hidden text-ellipsis whitespace-nowrap w-full'>Más relevantes</span>
-                                                        <svg className='mt-[3px] ml-1 fill-[#3483fa] h-[18px] w-[18px]' width="12" height="12" viewBox="0 0 12 12" ariaHidden="true"><path fillOpacity=".45" d="M6 7.057L9.352 3.705 10.148 4.5 6 8.648 1.852 4.5 2.648 3.705z"></path></svg>
+                                                        <svg className='mt-[3px] ml-1 fill-[#3483fa] h-[18px] w-[18px]' width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path fillOpacity=".45" d="M6 7.057L9.352 3.705 10.148 4.5 6 8.648 1.852 4.5 2.648 3.705z"></path></svg>
                                                     </button>
                                                 </div>
                                             </div>

@@ -1,9 +1,14 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router'
 
 const Product = ({ product }) => {
+    const navigate = useNavigate()
 
-    const discont =  Math.round(100 -(product.price * 100) / product.original_price)
+    const discont = Math.round(100 - (product.price * 100) / product.original_price);
+
+    const handleDetailProduct = (id) => {
+        navigate(`/product_details/${id}`);
+    }
 
     return (
         <li className='flex flex-grow w-full [&>div>div>div>div>svg]:hover:visible
@@ -16,7 +21,8 @@ const Product = ({ product }) => {
                     px-6 w-40 box-content'>
 
                         <div className='w-[160px]'>
-                            <img className='w-full h-full'
+                            <img onClick={() => handleDetailProduct(product.id)}
+                                className='w-full h-full cursor-pointer'
                                 src={product.thumbnail} alt={product.title} />
                         </div>
                     </div>
@@ -61,7 +67,7 @@ const Product = ({ product }) => {
                                             <span className='flex leading-[1]'>
                                                 {product.original_price - product.price > 0 &&
                                                     <span className='text-[#00a650] flex text-[14px] font-normal leading-[1] box-border'>
-                                                       {discont}% OFF
+                                                        {discont}% OFF
                                                     </span>}
                                             </span>
                                         </div>

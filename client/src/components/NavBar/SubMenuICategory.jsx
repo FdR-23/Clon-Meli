@@ -17,7 +17,7 @@ const SubMenuICategory = ({ subcategories }) => {
                          whitespace-nowrap overflow-hidden text-ellipsis hover:bg-[#3483fa]
                     ${category === "Tecnología" ?
                                 'after:border-t-[1.5px] after:border-r-[1.5px] after:border-[#ffffff99] after:absolute after:align-middle after:h-[7px] after:w-[7px] after:rotate-45 after:translate-y-[-50%] after:top-[50%] after:right-[34px]' : ''}`}
-                            href={category === "Ver más categorías" ? '/more-product' : '#'}>
+                            href={category === "Ver más categorías" ? '/more-category' : '#'}>
                             {category}
                         </a>
 

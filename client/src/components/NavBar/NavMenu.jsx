@@ -73,7 +73,7 @@ export const NavMenu = () => {
                   text-[#33333399] hover:text-[#333333e6] text-sm '>
                         Categorías
                     </button>
-                    {open || isHovered && navCategories &&
+                    {open && navCategories &&
                         <SubMenuICategory
                             subcategories={navCategories} />}
                 </li>
