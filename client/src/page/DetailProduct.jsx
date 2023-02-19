@@ -233,10 +233,11 @@ const DetailProduct = () => {
             <div className='flex flex-row flex-wrap box-border'>
               <div className='basis-0 flex-shrink flex-grow-[2] w-full box-border'>
                 <div className='flex flex-row flex-wrap box-border'>
-                  <div className='mb-[68px] w-full h-full min-h-[500px] relative box-border '>
+                  <div className='mb-[68px] w-full h-full min-h-[700px] relative box-border '>
                     <div></div>
-                    <div className='h-auto w-full ml-[16px] mt-[16px] absolute box-border'>
-                      <div className='left-[56px] w-[700px] bg-white h-full my-6 p-4 min-h-[500px] absolute top-0'>
+                    <div className='h-auto w-full ml-[16px] mt-[16px] absolute'>
+                      <div className='left-[56px] w-[700px] bg-white h-full 
+                      mt-6 p-4 min-h-[500px] absolute top-0'>
                       </div>
                       {item?.pictures && item.pictures.map((img) =>
                         <span className='block mb-2'>
