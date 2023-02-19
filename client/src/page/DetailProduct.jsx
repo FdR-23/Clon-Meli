@@ -12,6 +12,7 @@ const DetailProduct = () => {
     }
   }, [id])
 
+  const discont = Math.round(100 - (item?.base_price * 100) / item?.original_price);
 
   const handleInteger = (prop) => {
     const arrProp = Array.from(String(prop));
@@ -19,6 +20,7 @@ const DetailProduct = () => {
       const IntegerArr = arrProp.slice(0, arrProp.indexOf(".")).join("");
       return Number(IntegerArr);
     }
+    return Number(arrProp.join(""));
   };
 
   const handleDecimal = (prop) => {
@@ -27,8 +29,6 @@ const DetailProduct = () => {
       const decimalArr = arrProp.slice(arrProp.indexOf(".") + 1).join("");
       return Number(decimalArr);
     }
-
-    return newArr;
   };
   return (
     <div className='w-[1184px] text-[16px] mx-auto'>
@@ -73,7 +73,7 @@ const DetailProduct = () => {
 
                 <div className='w-full box-border'>
                   <div className='mb-2 mr-10'>
-                    <span className='text-[#0000008c] text-[14px] font-normal whitespace-pre-wrap'>Nuevo  |  +1000 vendidos</span>
+                    <span className='text-[#0000008c] text-[14px] font-normal whitespace-pre-wrap'>{item?.condition == 'new' ? "Nuevo" : "Usado"}  |  +{item?.sold_quantity > 100 ? 100 : item?.sold_quantity > 1000 ? 1000 : item?.sold_quantity} vendidos</span>
                   </div>
                   <div className='flex'>
                     <h1 className='flex-auto text-[22px] mb-2 mr-7 leading-[1.18]  break-words'>
@@ -103,21 +103,21 @@ const DetailProduct = () => {
                        after:w-full after:h-[1px] after:box-border after:border-[#0000008c]'>
 
                         < span className='mr-[2px]'>$</span>
-                        <span>123123</span>
-
+                        <span>{item?.original_price && handleInteger(item?.original_price)}</span>
+                        <span>{item?.original_price && handleDecimal(item?.original_price)}</span>
                       </span>
                     </s>
                     <div className='flex justify-start items-center translate-x-[-1px] '>
                       <span className='text-[#000000e6] text-[36px] font-normal leading-[1] inline-flex items-baseline  '>
                         <span className='pr-[6px] '>$</span>
-                        <span className=''>{item?.base_price && handleInteger(item?.base_price)} </span>
+                        <span >{item?.base_price && handleInteger(item?.base_price)} </span>
                         <span className='text-[18px] mt-1 self-start ml-[1px]'>{item?.base_price && handleDecimal(item?.base_price)}</span>
                       </span>
 
                       <span className='ml-[6px] mt-[1px]'>
 
                         <span className='items-center flex font-normal  text-[#00a650] text-[18px]'>
-                          3% OFF
+                          {discont}% OFF
                         </span>
                       </span>
                     </div>
@@ -207,7 +207,8 @@ const DetailProduct = () => {
                         </figure>
                         <div className='text-[#000000e6] '>
                           <p className='text-[16px] font-normal'>Ubicación</p>
-                          <p className='text-[#0000008c] text-[14px]'>Paternal</p>
+                          <p className='text-[#0000008c] text-[14px]'>
+                            {item?.seller_address.search_location.neighborhood.name}, {item?.seller_address.search_location.city.name}, {item?.seller_address.country.name}</p>
                         </div>
                       </div>
                       <div className='flex mb-5'>
@@ -228,14 +229,68 @@ const DetailProduct = () => {
             </div>
           </div>
 
+          <div className='w-full pb-10 box-border basis-0 flex-grow flex-shrink'>
+            <div className='flex flex-row flex-wrap box-border'>
+              <div className='basis-0 flex-shrink flex-grow-[2] w-full box-border'>
+                <div className='flex flex-row flex-wrap box-border'>
+                  <div className='mb-[68px] w-full h-full min-h-[500px] relative box-border '>
+                    <div></div>
+                    <div className='h-auto w-full ml-[16px] mt-[16px] absolute box-border'>
+                      <div className='left-[56px] w-[700px] bg-white h-full my-6 p-4 min-h-[500px] absolute top-0'>
+                      </div>
+                      {item?.pictures && item.pictures.map((img) =>
+                        <span className='block mb-2'>
+                          <label className='relative'>
+                            <div className='rounded mr-0 border border-solid border-[#00000040] cursor-pointer
+                            inline-flex font-normal overflow-hidden relative'>
+                              <div className='text-[12px] h-12 p-[2px] w-12 box-border'>
+                                <img className='object-contain h-full w-full' src={img.url} alt={img.alt} />
+                              </div>
+                            </div>
+                          </label>
 
-          <div>
-            <div className='mb-[68px] w-full h-full min-h-[500px] relative box-border'>
+                          <figure className='left-[56px] w-[700px] flex text-center  
+                          bg-white h-full my-6 p-4 min-h-[500px] absolute top-0'>
+                            <img className='cursor-zoom-in h-auto object-contain w-full box-border'
+                              src={img.url} alt={img.alt} />
+                          </figure>
+                        </span>
+                      )}
 
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className='ml-[50px] w-[718px]  box-border'>
+              <div className='py-[40px] border-t-[1px] borde-solid border-[#0000001a]
+                flex flex-row flex-wrap'>
+                <div className='flex-1 w-full text-[#000000e6] box-border'>
+                  <h2 className='text-[24px] pb-8 leading-[1.25]'>Características principales</h2>
+                  <div className='border border-solid border-[#ededed] rounded-[5px]'>
+                    <table className='border-0'>
+                      <tbody className='table-row-group '>
+                        {item.attributes && item.attributes.map((carat, index) =>
+                          <tr key={carat.id} className='bg-white table-row border-0 '>
+                            <th className={`${index % 2 === 0 ? 'bg-[#ebebeb]' : 'bg-[#f5f5f5]'}   rounded-tl-[4px] table-cell
+                          text-left align-middle whitespace-normal py-4 px-6 
+                          text-[14px] text-[#000000e6] font-semibold`}>
+                              {carat.name}</th>
+                            <td className='pl-6 w-[73%] rounded-tr-[4px] p-4
+                            bg-white font-normal'>
+                              {carat.value_name}
+                            </td>
+                          </tr>
+                        )}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-
 
         </div>
       </div>

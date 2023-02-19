@@ -30,7 +30,6 @@ const ListProductSearched = () => {
 
   
 
-    console.log("Liusta de products", products)
 
     if (products === undefined) { return null } else {
         return (
