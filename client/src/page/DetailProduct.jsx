@@ -272,7 +272,7 @@ const DetailProduct = () => {
                   <div className='border border-solid border-[#ededed] rounded-[5px]'>
                     <table className='border-0'>
                       <tbody className='table-row-group '>
-                        {item.attributes && item.attributes.map((carat, index) =>
+                        {item?.attributes && item.attributes.map((carat, index) =>
                           <tr key={carat.id} className='bg-white table-row border-0 '>
                             <th className={`${index % 2 === 0 ? 'bg-[#ebebeb]' : 'bg-[#f5f5f5]'}   rounded-tl-[4px] table-cell
                           text-left align-middle whitespace-normal py-4 px-6 
