@@ -7,7 +7,7 @@ import FiltersSelected from '../components/ProductSearched/FiltersSelected';
 import Product from '../components/ProductSearched/Product';
 
 const ListProductSearched = () => {
-    const [searchParams, setSearchParams] = useSearchParams()
+    const [searchParams, setSearchParams] = useSearchParams();
     const [products, setProducts] = useState();
     const [filterAvailable, setFilterAvailable] = useState()
     const location = useLocation()
@@ -66,7 +66,6 @@ const ListProductSearched = () => {
                                         key={index}
                                         filters={elemet} />
                                 )}
-
                             </section>
 
                             <section className='clear-both mt-9 block '>
@@ -76,6 +75,7 @@ const ListProductSearched = () => {
                                         filters={elemet} />
                                 )}
                             </section>
+                            
                         </aside>
                         <section className='flex flex-col w-[835px] box-border'>
                             <div className='mb-6 mt-2 text-right '>

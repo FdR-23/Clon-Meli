@@ -102,24 +102,27 @@ const DetailProduct = () => {
                       <span className='float-left box-border
                        after:absolute after:border-solid after:border after:block after:top-[40%] 
                        after:w-full after:h-[1px] after:box-border after:border-[#0000008c]'>
-
-                        < span className='mr-[2px]'>$</span>
+                        {item?.original_price &&
+                          < span className='mr-[2px]'>$</span>
+                        }
                         <span>{item?.original_price && handleInteger(item?.original_price)}</span>
                         <span>{item?.original_price && handleDecimal(item?.original_price)}</span>
+
                       </span>
                     </s>
                     <div className='flex justify-start items-center translate-x-[-1px] '>
                       <span className='text-[#000000e6] text-[36px] font-normal leading-[1] inline-flex items-baseline  '>
                         <span className='pr-[6px] '>$</span>
-                        <span >{item?.base_price && handleInteger(item?.base_price)} </span>
+                        <span >{item?.base_price && handleInteger(item?.base_price)}</span>
                         <span className='text-[18px] mt-1 self-start ml-[1px]'>{item?.base_price && handleDecimal(item?.base_price)}</span>
                       </span>
 
                       <span className='ml-[6px] mt-[1px]'>
+                        {item?.original_price - item?.base_price > 0 &&
+                          <span className='items-center flex font-normal  text-[#00a650] text-[18px]'>
+                            {discont}% OFF
+                          </span>}
 
-                        <span className='items-center flex font-normal  text-[#00a650] text-[18px]'>
-                          {discont}% OFF
-                        </span>
                       </span>
                     </div>
 
@@ -296,7 +299,7 @@ const DetailProduct = () => {
               <QuestionProduct
                 id={id} />
 
-                
+
             </div>
           </div>
 
