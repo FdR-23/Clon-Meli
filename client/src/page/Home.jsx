@@ -15,14 +15,15 @@ import OfficialStore from '../components/Home/OfficialStore/OfficialStore.jsx'
 import Banner from '../components/Banner.jsx'
 import Offerts from '../components/Home/Offerts/Offerts.jsx'
 const Home = () => {
-    // const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(true);
 
-    // const handletoggle = () => {
-    //     setOpen(!open)
-    // }
-    // if (open) {
-    //     return <Banner  setToggle={handletoggle} />
-    // }
+    const handletoggle = () => {
+        setOpen(!open)
+    }
+
+    if (open) {
+        return <Banner  setToggle={handletoggle} />
+    }
     return (
         <main className='flex flex-col w-full h-auto lg:block  bg-main'>
             <HomeCarousel />
