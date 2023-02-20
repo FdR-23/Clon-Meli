@@ -5,7 +5,6 @@ import { getProduct } from '../services/getProduct';
 const DetailProduct = () => {
   const [item, setItem] = useState();
   const { id } = useParams()
-  console.log(item)
 
   useEffect(() => {
     if (id) {
@@ -167,7 +166,7 @@ const DetailProduct = () => {
                           <span className='text-[#000000e6] text-[16px] font-semibold ml-1 whitespace-nowrap block float-left'>1 unidad</span>
                           <span className='ml-[6px] align-bottom block float-left '>
                             <svg className=' mr-[2px] align-bottom' width="18px" height="18px" viewBox="0 0 24 24" fill="none">
-                              <path d="M4 9L12 17L20 9" stroke="#3483fa" stroke-width="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                              <path d="M4 9L12 17L20 9" stroke="#3483fa" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                           </span>
                           <span className='text-[#0000008c] text-[14px] font-normal ml-[6px] overflow-hidden text-ellipsis whitespace-nowrap w-auto'>
@@ -179,7 +178,7 @@ const DetailProduct = () => {
                 </div>
 
                 <div className='mt-[26px] w-full'>
-                  <form className='w-full box-border'>
+                  <div className='w-full box-border'>
                     <div >
                       <button className='w-full bg-[#3483fa] border-transparent text-white 
                         rounded-md inline-block text-[16px] font-semibold h-12 px-6 text-center 
@@ -191,7 +190,7 @@ const DetailProduct = () => {
                         <span className='relative top-[-1px] flex h-full justify-center items-center'>Agregar al carrito</span>
                       </button>
                     </div>
-                  </form>
+                  </div>
 
                 </div>
 
@@ -212,12 +211,12 @@ const DetailProduct = () => {
                         <div className='text-[#000000e6] '>
                           <p className='text-[16px] font-normal'>Ubicación</p>
                           <p className='text-[#0000008c] text-[14px]'>
-                            {item?.seller_address.search_location.neighborhood.name}, {item?.seller_address.search_location.city.name}, {item?.seller_address.country.name}</p>
+                            {item?.seller_address.search_location?.neighborhood?.name}, {item?.seller_address.search_location.city.name}, {item?.seller_address.country.name}</p>
                         </div>
                       </div>
                       <div className='flex mb-5'>
                         <figure className='mt-[2px] mr-[10px] items-center w-[20px] '>
-                          <img src="https://http2.mlstatic.com/frontend-assets/vpp-frontend/medal.svg" alt=""></img>
+                          <img src="https://http2.mlstatic.com/frontend-assets/vpp-frontend/medal.svg"></img>
                         </figure>
                         <div className='text-[#00a650] '>
                           <p className='text-[16px] font-normal'>MercadoLíder Platinum</p>
@@ -237,30 +236,33 @@ const DetailProduct = () => {
             <div className='flex flex-row flex-wrap box-border'>
               <div className='basis-0 flex-shrink flex-grow-[2] w-full box-border'>
                 <div className='flex flex-row flex-wrap box-border'>
-                  <div className='mb-[68px] w-full h-full min-h-[700px] relative box-border '>
+                  <div className='mb-[68px] w-full h-full min-h-[500px] relative box-border '>
                     <div></div>
                     <div className='h-auto w-full ml-[16px] mt-[16px] absolute'>
                       <div className='left-[56px] w-[700px] bg-white h-full 
                       mt-6 p-4 min-h-[500px] absolute top-0'>
                       </div>
-                      {item?.pictures && item.pictures.map((img) =>
-                        <span className='block mb-2'>
-                          <label className='relative'>
-                            <div className='rounded mr-0 border border-solid border-[#00000040] cursor-pointer
+                      {item?.pictures && item.pictures.map((img, index) => {
+                        if (index < 5) {
+                          return (
+                            <span className='block mb-2'>
+                              <label className='relative'>
+                                <div className='rounded mr-0 border border-solid border-[#00000040] cursor-pointer
                             inline-flex font-normal overflow-hidden relative'>
-                              <div className='text-[12px] h-12 p-[2px] w-12 box-border'>
-                                <img className='object-contain h-full w-full' src={img.url} alt={img.alt} />
-                              </div>
-                            </div>
-                          </label>
+                                  <div className='text-[12px] h-12 p-[2px] w-12 box-border'>
+                                    <img className='object-contain h-full w-full' src={img.url} alt={img.alt} />
+                                  </div>
+                                </div>
+                              </label>
 
-                          <figure className='left-[56px] w-[700px] flex text-center  
+                              <figure className='left-[56px] w-[700px] flex text-center  
                           bg-white h-full my-6 p-4 min-h-[500px] absolute top-0'>
-                            <img className='cursor-zoom-in h-auto object-contain w-full box-border'
-                              src={img.url} alt={img.alt} />
-                          </figure>
-                        </span>
-                      )}
+                                <img className='cursor-zoom-in h-auto object-contain w-full box-border'
+                                  src={img.url} alt={img.alt} />
+                              </figure>
+                            </span>)
+                        }
+                      })}
 
 
                     </div>

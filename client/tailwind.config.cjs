@@ -19,7 +19,9 @@ module.exports = {
       'hover-button-categorie': '0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);',
       'oficial-store-logo': '0 2px 15px 0 rgb(0 0 0 / 10%)',
       'card-oficial-store': '0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%)',
-      'card-offer':'0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);'
+      'card-offer': '0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);',
+      'inpu_question': '0 0 0 1px rgb(0 0 0 / 25%)',
+      'input_question_none': '0 0 0 2px #fff, 0 0 0 3px #2968c8, 0 0 0 5px rgb(65 137 230 / 40%)'
     },
     extend: {
       fontFamily: {
