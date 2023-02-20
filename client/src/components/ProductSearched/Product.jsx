@@ -5,7 +5,11 @@ const Product = ({ product }) => {
     const navigate = useNavigate()
 
     const discont = Math.round(100 - (product.price * 100) / product.original_price);
-
+    // const originalPrice = product?.original_price
+    // currencyFormatter({
+    //     currency: "USD",
+    //     value
+    // })
     const handleDetailProduct = (id) => {
         navigate(`/product_details/${id}`);
     }
@@ -51,17 +55,26 @@ const Product = ({ product }) => {
                                         <s className='relative items-center text-[#999] text-[12px] mt-1 '>
                                             <span className='float-left box-border
                                                 after:absolute after:border-solid after:border after:block after:top-[40%] after:w-full after:h-[1px] after:box-border'>
-                                                {product?.original_price &&
-                                                    < span className='mr-[2px]'>$</span>}
-                                                <span>{product?.original_price}</span>
+                                                <span>{product?.original_price &&
+                                                    product?.original_price.toLocaleString("es-ar", {
+                                                        style: "currency",
+                                                        currency: "ARS",
+                                                        minimumFractionDigits: 0,
+                                                    })
+
+                                                }</span>
 
                                             </span>
                                         </s>
                                         <div className='flex items-center'>
                                             <span className='text-[#333] flex text-[24px] font-normal leading-[1.25] mr-2'>
                                                 <span className='float-left'>
-                                                    <span className='mr-[6px]'>$</span>
-                                                    <span>{product.price && product.price}</span>
+                                                    <span>{product.price &&
+                                                        product.price.toLocaleString("es-ar", {
+                                                            style: "currency",
+                                                            currency: "ARS",
+                                                            minimumFractionDigits: 0,
+                                                        })}</span>
                                                 </span>
                                             </span>
                                             <span className='flex leading-[1]'>

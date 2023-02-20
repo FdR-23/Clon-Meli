@@ -101,11 +101,12 @@ const DetailProduct = () => {
                       <span className='float-left box-border
                        after:absolute after:border-solid after:border after:block after:top-[40%] 
                        after:w-full after:h-[1px] after:box-border after:border-[#0000008c]'>
-                        {item?.original_price &&
-                          < span className='mr-[2px]'>$</span>
-                        }
-                        <span>{item?.original_price && handleInteger(item?.original_price)}</span>
-                        <span>{item?.original_price && handleDecimal(item?.original_price)}</span>
+
+                        <span>{item?.original_price && item?.original_price.toLocaleString("es-ar", {
+                          style: "currency",
+                          currency: "ARS",
+                          minimumFractionDigits: 0,
+                        })}</span>
 
                       </span>
                     </s>
