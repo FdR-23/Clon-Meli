@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router';
+import QuestionProduct from '../components/DetailProduct/QuestionProduct';
 import { getProduct } from '../services/getProduct';
 const DetailProduct = () => {
   const [item, setItem] = useState();
@@ -291,6 +292,11 @@ const DetailProduct = () => {
                   </div>
                 </div>
               </div>
+
+              <QuestionProduct
+                id={id} />
+
+                
             </div>
           </div>
 
