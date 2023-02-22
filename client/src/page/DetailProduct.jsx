@@ -3,14 +3,19 @@ import { useParams } from 'react-router';
 import QuestionProduct from '../components/DetailProduct/QuestionProduct';
 import { getProduct } from '../services/getProduct';
 const DetailProduct = () => {
+  const [imgSelected, setImgSelected] = useState();
   const [item, setItem] = useState();
   const { id } = useParams()
 
   useEffect(() => {
     if (id) {
-      getProduct(id).then((data) => setItem(data))
+      getProduct(id).then((data) =>
+        setItem(data))
     }
   }, [id])
+  useEffect(() => {
+    setImgSelected(item?.pictures[0].url)
+  },[item?.pictures[0].url])
 
   const discont = Math.round(100 - (item?.base_price * 100) / item?.original_price);
 
@@ -29,6 +34,10 @@ const DetailProduct = () => {
       const decimalArr = arrProp.slice(arrProp.indexOf(".") + 1).join("");
       return Number(decimalArr);
     }
+  };
+
+  const handleClick = (prop) => {
+    setImgSelected(prop);
   };
   return (
     <div className='w-[1184px] text-[16px] mx-auto'>
@@ -248,10 +257,13 @@ const DetailProduct = () => {
                           return (
                             <span className='block mb-2'>
                               <label className='relative'>
-                                <div className='rounded mr-0 border border-solid border-[#00000040] cursor-pointer
-                            inline-flex font-normal overflow-hidden relative'>
+                                <div className={`rounded mr-0  cursor-pointer
+                            inline-flex font-normal overflow-hidden relative
+                            ${img.url === imgSelected ? 'border-solid border-[#3483fa] border-[2px]'
+                                    : 'border border-solid border-[#00000040] '}`}>
                                   <div className='text-[12px] h-12 p-[2px] w-12 box-border'>
-                                    <img className='object-contain h-full w-full' src={img.url} alt={img.alt} />
+                                    <img className='object-contain h-full w-full' src={img.url} alt={img.alt}
+                                      onClick={() => handleClick(img.url)} />
                                   </div>
                                 </div>
                               </label>
@@ -259,7 +271,7 @@ const DetailProduct = () => {
                               <figure className='left-[56px] w-[700px] flex text-center  
                           bg-white h-full my-6 p-4 min-h-[500px] absolute top-0'>
                                 <img className='cursor-zoom-in h-auto object-contain w-full box-border'
-                                  src={img.url} alt={img.alt} />
+                                  src={imgSelected} alt={img.alt} />
                               </figure>
                             </span>)
                         }
