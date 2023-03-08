@@ -5,7 +5,7 @@ function Banner({ setToggle }) {
 
     return (
         <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-            <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacit"></div>
+            <div className="fixed inset-0 bg-gray-700 bg-opacity-75 transition-opacit"></div>
 
             <div className="fixed inset-0 z-10 overflow-y-auto">
                 <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
@@ -19,9 +19,9 @@ function Banner({ setToggle }) {
                                     </svg>
                                 </div>
                                 <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                                    <h3 className="text-xl font-medium leading-6 text-gray-900" id="modal-title">¡ Atencion !</h3>
+                                    <h3 className="text-2xl font-medium leading-6 text-gray-900" id="modal-title">¡ Atencion !</h3>
                                     <div className="mt-2">
-                                        <p className="text-sm text-gray-500">
+                                        <p className="text-lg text-gray-500">
                                             Este sitio fue creado con fines educativos no es oficial de Mercado Libre</p>
                                     </div>
                                 </div>
