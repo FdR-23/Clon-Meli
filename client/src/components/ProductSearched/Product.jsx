@@ -13,6 +13,7 @@ const Product = ({ product }) => {
     const handleDetailProduct = (id) => {
         navigate(`/product_details/${id}`);
     }
+console.log(product)
 
     return (
         <li className='flex flex-grow w-full [&>div>div>div>div>svg]:hover:visible
@@ -32,7 +33,7 @@ const Product = ({ product }) => {
                     </div>
 
                     <div className='flex flex-col w-[calc(100% - 208px)]'>
-                        {product.tags.includes("best_seller_candidate") &&
+                        {product?.tags?.includes("best_seller_candidate") &&
                             <div className='bg-[#FF7733] mb-3 mt-1 text-[12px] rounded table-cell
                         font-semibold py-[2px] px-1 w-fit '>
                                 <div className='flex items-center gap-1'>
